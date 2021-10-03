@@ -6,3 +6,4 @@ export 'src/strategy.dart';
 export 'src/unleash.dart';
 export 'src/context.dart';
 export 'src/unleash_settings.dart';
+export 'src/unleash_client.dart';

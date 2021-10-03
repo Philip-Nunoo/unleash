@@ -58,6 +58,7 @@ class UnleashClient {
         _settings.registerUrl,
         headers: {
           'Content-type': 'application/json',
+          'Accept': 'application/json',
           ..._settings.toHeaders(),
         },
         body: json.encode(register.toJson()),
@@ -67,7 +68,7 @@ class UnleashClient {
           'Could not register this unleash instance.\n'
           'Please make sure your configuration is correct.\n'
           'Error:\n'
-          'HTTP status code: ${response.statusCode}\n'
+          'HTTP status code 2098: ${response.statusCode}\n'
           'HTTP response message: ${response.body}',
           name: 'unleash',
         );
